@@ -1,33 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 body {
     display: flex;
     align-items: center;
-    height: 31vh;
+    height: 61vh;
     margin: 4ch;
-    background: maroon;
+    background: rgb(8, 0, 109);
     background-image: url(pexels-andre-furtado-1162251.jpg);
-    /* object-fit: contain; */
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.329);
+    background: rgba(0, 0, 0, 0.566);
     color: white;
     padding: 2em;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     margin: 1rem;
+    border: 1px solid rgba(121, 0, 0, 0.847);
 }
 
-h1.temp {
+h1.temperature {
     margin: 0;
+    margin-bottom: 0.5em;
 }
 
 .search {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
+    border: 1px solid rgba(121, 0, 0, 0.829);
 }
 
 input.search-bar {
@@ -40,6 +45,7 @@ input.search-bar {
     font-family: inherit;
     font-size: 120%;
     width: 100%;
+    border: 1px solid rgb(0, 63, 9);
 }
 
 button {
@@ -53,8 +59,33 @@ button {
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    border-radius: 30px;
+    border: 1px solid rgba(121, 0, 0, 0.847);
 }
 
 button:hover {
     background: #7c7c7c6b;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.incoming {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.incoming:after {
+    visibility: visible;
+    color: white;
+}
+
